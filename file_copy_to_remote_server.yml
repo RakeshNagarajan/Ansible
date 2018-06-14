@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+   - name: File copy to remote server's
+     copy:
+       src: /ansible/network_restart.yml
+       dest: /root

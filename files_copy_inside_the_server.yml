@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks: 
+    - name: file copy inside the server
+      copy:
+        src: /root/network_restart.yml
+        dest: /root/Pictures/
+        remote_src: yes
